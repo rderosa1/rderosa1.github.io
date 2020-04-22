@@ -6,18 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Rico's Portfolio</title>
-
-    <script>
-        const toggle = () => {
-            var x = document.getElementById("contact-info");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
-
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -32,12 +21,16 @@
 
     <nav class="navbar">
         <ul>
-            <a href = "#about-me" ><li>About</li></a>
+            <a href="#about-me">
+                <li>About</li>
+            </a>
             <span class="contact" onclick="toggle()">
                 <li>Contact Me</li>
             </span>
-            <a href = "#projects-section"><li>Projects</li></a>
-            <a href="https://drive.google.com/drive/my-drive" target="_blank">
+            <a href="#projects-section">
+                <li>Projects</li>
+            </a>
+            <a href="https://drive.google.com/file/d/141qKtufhGdxMuxp8cunY9ygqPf2Xvl6m/view?export?format=pdf" target="_blank">
                 <li>Resume</li>
             </a>
         </ul>
@@ -45,12 +38,12 @@
 
     <main id="main">
         <section id="contact-info">
-            <h4>email : ricoderose@gmail.com</h4>
+            <h4>Email : ricoderose@gmail.com</h4>
             <a href="https://www.linkedin.com/in/ricardo-derosa/" target="_blank">
-                <h4>linkedIn: linkedin.com/in/ricardo-derosa/</h4>
+                <h4>linkedin: linkedin.com/in/ricardo-derosa/</h4>
             </a>
             <a href="https://drive.google.com/file/d/141qKtufhGdxMuxp8cunY9ygqPf2Xvl6m/view?export?format=pdf" target="_blank">
-                <h4>resume</h4>
+                <h4>My Resume</h4>
             </a>
         </section>
 
@@ -69,7 +62,7 @@
                 but in the end, wherever my family is, is where I would like to be.</p>
         </section>
 
-        <section id = "projects-section"></section>
+        <section id="projects-section"></section>
         <section class="project project-1">
             <div class="project-description">
                 <h2>MOON MAN</h2>
@@ -138,10 +131,70 @@
             <img class="project-image" src="" alt="" />
         </section> -->
 
+        <section id="skills">
+            <h3>My Skills</h3>
+            <div class = "icons-container"> 
+                <div class="icons">
+                    <img src="./icon-images/html_logo.png" alt="the icon for html5" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/css3_logo.png" alt="the icon for CSS3" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/js_logo.png" alt="the icon for javascript" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/jquery_logo.png" alt="the icon for jquery" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/react-logo.png" alt="the icon for REACT" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/react_router_logo.png" alt="the icon for react router" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/ruby_logo.png" alt="the icon for ruby" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/rails_logo.png" alt="the icon for RAILS" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/mongoose_logo.jpg" alt="the icon for mongoose" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/mongodb_logo.jpeg" alt="the icon for MongoDB" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/express_logo.jpeg" alt="the icon for express" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/git_logo.png" alt="the icon for git" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/github_logo.png" alt="the icon for github" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/terminal_logo.png" alt="the icon for terminal" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/surge_logo.png" alt="the icon for surge" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/heroku_logo.jpeg" alt="the icon for heroku" />
+                </div>
+                <div class="icons">
+                    <img src="./icon-images/aws_logo.jpeg" alt="the icon for aws" />
+                </div>
+            </div>
+        </section>
+
+
     </main>
 
     <footer id="footer">
-        <div></div>
+        <a href="https://www.linkedin.com/in/ricardo-derosa/" target="_blank"><img src="./icon-images/linkedin_logo.png" alt="linked in Logo"></a>
+        
+        <a href = "https://github.com/rderosa1" target = "_blank"><img src="./icon-images/github_logo_footer.png" alt="github logo"></a>
     </footer>
 </body>
 
