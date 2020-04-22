@@ -22,6 +22,14 @@
         transform: translate(-15%, -50%);
         color: white;
     }
+
+    .header-content h1 {
+        font-size:3rem;
+    }
+
+    .header-content h2 {
+        font-size: 2.5rem;
+    }
     
     .header-content img {
         opacity: .8;
@@ -201,6 +209,17 @@
     .icons img{
         width: 10em;
         height: 5rem;
+    }
+
+    .contact-section{
+        width: 100%;
+        font-size:1.25rem;
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .contact-section a {
+        text-decoration: none;
     }
 
     footer {
