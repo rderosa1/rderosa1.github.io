@@ -32,6 +32,7 @@
         display: flex;
         width: 100%;
         width: 100%;
+        background:#e9e9e9;	
     }
     
     .navbar ul {
@@ -71,8 +72,13 @@
     }
     
     .project-description {
+        margin-top: 3rem;
         width: 45%;
         padding: 3rem;
+    }
+
+    .project-description p {
+        padding: 1rem 3rem;
     }
     
     .project-image {
@@ -85,7 +91,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 1rem;
+        padding: 2rem;
     }
     
     #contact-info {
@@ -115,20 +121,25 @@
     
     #about-me {
         padding: 2rem;
-        background: lightblue;
+        background: #52ae41;
         width: 100%;
         display: flex;
         flex-direction: column; 
         align-items: center;
     }
+
+    #about-me h1 {
+        text-decoration: underline;
+        margin-bottom: 1rem;
+    }
     
     #about-me p {
-        width: 80%;
+        width: 65%;
         font-size: 1.5rem;
     }
     
     .project-1 {
-        background: #daffef;
+        background: ;
     }
     
     .project div{
@@ -152,12 +163,16 @@
         border: 5px solid white;
         border-radius: 2rem;
     }
+
+    .project-2 {
+        background-color: #ce1126;	
+    }
     
     .project-2 img {
         border: 5px solid black;
         border-radius: 2rem;
     }
-    
+
     .project-3 img {
         border: 5px solid white;
         border-radius: 2rem;
@@ -170,6 +185,7 @@
 
     #skills h3{
         margin: 0 auto;
+        padding-top: 2rem;
         text-align: center;
         font-size: 2rem;
     }
