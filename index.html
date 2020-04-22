@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Rico's Portfolio</title>
+
+    <script>
+        const toggle = () => {
+            var x = document.getElementById("contact-info");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header id="hero-image">
+        <div class="header-content">
+            <img src="./images/head-shot.jpeg" alt="front-view picture of Rico" height="40%" width="40%" />
+            <h1>Rico Derosa</h1>
+            <h2>Software Engineer</h2>
+        </div>
+    </header>
+
+
+    <nav class="navbar">
+        <ul>
+            <a href = "#about-me" ><li>About</li></a>
+            <span class="contact" onclick="toggle()">
+                <li>Contact Me</li>
+            </span>
+            <a href = "#projects-section"><li>Projects</li></a>
+            <a href="https://drive.google.com/drive/my-drive" target="_blank">
+                <li>Resume</li>
+            </a>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section id="contact-info">
+            <h4>email : ricoderose@gmail.com</h4>
+            <a href="https://www.linkedin.com/in/ricardo-derosa/" target="_blank">
+                <h4>linkedIn: linkedin.com/in/ricardo-derosa/</h4>
+            </a>
+            <a href="https://drive.google.com/file/d/141qKtufhGdxMuxp8cunY9ygqPf2Xvl6m/view?export?format=pdf" target="_blank">
+                <h4>resume</h4>
+            </a>
+        </section>
+
+        <section id="about-me">
+            <h1>About Me</h1>
+            <p> Full name, Dr. Ricardo Alejandro Pedro DeRosa Garcia De la Cruz. I am first generation American, born to
+                immigrant families from Mexico and Italy. I have several passions in life, one of which is learning. I
+                love improving myself, and applying what I have learned especially for the benefit of those I consider
+                close to me. I highly value my independence and my familial relationships. In life I have managed to
+                earn a degree in medicine from the University of Guadalajara, School of Medicine, accredited through New
+                York Medical College, and have practiced medicine for a brief time in Guadalajara, where some of my
+                family is from, before returning to New York, where the rest of my family resides, to move on with my
+                educational and professional career. I was born and raised in the boroughs of New York City, moved to
+                Ohio to further my education there, lived in Gaming Austria for a year to study abroad, and then moved
+                to Guadalajara for medical school. Wherever I have found myself, I thought that I could live happily,
+                but in the end, wherever my family is, is where I would like to be.</p>
+        </section>
+
+        <section id = "projects-section"></section>
+        <section class="project project-1">
+            <div class="project-description">
+                <h2>MOON MAN</h2>
+                <p>Moon man is a fully functional CRUD (create, read, update, delete) app, with authentication and
+                    authorization capabilities. This group project allows one to browse and create parts for a
+                    spaceship, then add them to a separate list of parts, where they can be removed.</p>
+                <br>
+                <br>
+                <p>REACT is used for the front-end, and Mongoose and MongoDB for the back end</p>
+            </div>
+            <img class="project-image" src="./images/moonman.png" alt="screen-shot of moonman.surge" height="70%"
+                width="50%" />
+
+            <div class="button-div">
+                <a href="http://moonman.surge.sh/" target="_blank"><button>Live Site</button></a>
+                <a href="https://github.com/rderosa1/moonMan_app/tree/master" target="_blank"><button>Github
+                        repo</button></a>
+            </div>
+
+        </section>
+
+        <section class="project project-2">
+            <img class="project-image" src="./images/weather-which.png" alt="screen-shot of weatherWhich" height="70%"
+                width="40%" />
+            <div class="project-description">
+                <h2>WeatherWhich</h2>
+                <p>WeatherWhich is an app for getting the weather in any major city in the world. Simply type in the
+                    name of the city, and see the current weather conditions there. Want a 3 day forecast? press the
+                    button that reads "forecast" and it will appear, press it again to make it dissappear. </p>
+                <br>
+                <br>
+                <p>This project is made utilizing HTML5, CSS3, vanilla javascript, and an API call to openWeathermap</p>
+            </div>
+            <div class="button-div">
+                <a href="http://weatherwhich-app.surge.sh/" target="_blank"><button>Live Site</button></a>
+                <a href="https://github.com/rderosa1/WeatherWhich-App" target="_blank"><button>Github repo</button></a>
+            </div>
+        </section>
+
+        <section class="project project-3">
+            <div class="project-description">
+                <h2>Movie Massacre</h2>
+                <p>Movie massacre is a movie blog with authentication and authorization capabilities. As a
+                    non-registered user, you can see the movies and posts, but cannot manipulate posts in any way. Once
+                    registered, the site remembers who you are, and remembers both the movies you have chosen to post
+                    about and the posts themselves. posts may also be deleted.
+                    <br>
+                    <br>
+                    <p>movie massacre is rendered in the front end usign REACT, with REACT ROUTER, and the database and
+                        routes on the back-end were set up using RUBY on RAILS. Bcrypt was used for authentication /
+                        authentication.</p>
+                </p>
+            </div>
+            <img class="project-image" src="./images/movie-blog.png" alt="screen shot of movie massacre app"
+                height="70%" width="40%" />
+            <br>
+            <div class="button-div">
+                <a href="http://movie-massacre.surge.sh/" target="_blank"><button>Live Site</button></a>
+                <a href="https://github.com/rderosa1/movie_blog_rails_app" target="_blank"><button>Github
+                        repo</button></a>
+            </div>
+        </section>
+        <!-- <section class="project project-4">
+            <h2>Project four</h2>
+            <p>project description</p>
+            <img class="project-image" src="" alt="" />
+        </section> -->
+
+    </main>
+
+    <footer id="footer">
+        <div></div>
+    </footer>
+</body>
+
+</html>
